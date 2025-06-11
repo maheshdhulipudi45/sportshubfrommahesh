@@ -1,0 +1,135 @@
+/* General Container Styling */
+.container0 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  padding: 17px;
+  margin-top: 50px;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  height: 466px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+  padding: 15px;
+  background-color: #fff;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Input Group Styling */
+.inputGroup {
+  margin-bottom: 20px;
+  margin-left: 50px;
+  
+}
+
+.inputGroup label {
+
+  font-size: 1rem;
+  color: #555;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  text-align: center;
+  width: 80%; /* Ensure inputs take full width of their container */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box; /* Ensure padding doesn't affect the width */
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* Button Styling */
+.button {
+  width: 74%; /* Full width for the button */
+  display: inline-block;
+  background-color: #02005f;
+  margin-left: 50px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #005bb5;
+}
+
+/* Responsive Design */
+
+/* For tablets and smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+
+  .inputGroup input,
+  .inputGroup textarea {
+    font-size: 0.95rem;
+  }
+}
+
+/* For mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .container0{
+    height: 560px;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    margin-left: 15px;
+    padding: 16px;
+    height: 440px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+
+  .button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+
+  .inputGroup input,
+  .inputGroup textarea {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}

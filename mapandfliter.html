@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #d1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: blue;
+        padding: 3px;
+        color: aliceblue;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 600;
+    }
+    #d1 ul {
+        display: flex;
+        gap: 10px;
+        list-style: none;
+        margin-left: 50px;
+    }
+    #box1{
+        height: 200px;
+        width: 150px;
+        background-color: chocolate;
+    }
+
+    #d2{
+        height: 900px;
+        background-color: brown;
+    }
+</style>
+
+<body>
+    <!-- <div id="d1">
+        <div>
+        <ul><Li>Home</Li>
+            <Li>about</Li>
+            <Li>contact</Li>
+            <Li>news</Li></ul>
+        </div>
+        <div>
+            <input type="text"><button>Enter</button>
+        </div>
+    </div>
+    <div id="d2">
+        
+    </div> -->
+    <!-- <script>
+        const Myarr = [
+    { img: "/rohit.jpeg", name: "MI", cost: "450", button1: "Add to Cart", button2: "Buy Now" },
+    { img: "/rohit.jpeg", name: "MI", cost: "550", button1: "Add to Cart", button2: "Buy Now" },
+    { img: "/rohit.jpeg", name: "MI", cost: "480", button1: "Add to Cart", button2: "Buy Now" },
+
+    { img: "/rohit.jpeg", name: "MI", cost: "450", button1: "Add to Cart", button2: "Buy Now" },
+    { img: "/rohit.jpeg", name: "MI", cost: "400", button1: "Add to Cart", button2: "Buy Now" },
+    { img: "/rohit.jpeg", name: "MI", cost: "420", button1: "Add to Cart", button2: "Buy Now" },
+
+
+    { img: "/rohit.jpeg", name: "MI", cost: "550", button1: "Add to Cart", button2: "Buy Now" },
+    { img: "/rohit.jpeg", name: "MI", cost: "520", button1: "Add to Cart", button2: "Buy Now" },
+    { img: "/rohit.jpeg", name: "MI", cost: "491", button1: "Add to Cart", button2: "Buy Now" },
+
+    { img: "/rohit.jpeg", name: "MI", cost: "550", button1: "Add to Cart", button2: "Buy Now" },
+    { img: "/rohit.jpeg", name: "MI", cost: "520", button1: "Add to Cart", button2: "Buy Now" },
+    { img: "/rohit.jpeg", name: "MI", cost: "491", button1: "Add to Cart", button2: "Buy Now" },
+  ];
+  console.log(Myarr)
+  let newbox=Myarr.map((item,index)=>{
+    return ` <div id="box1" ">
+        <img src="${item.img}" alt="${item.name}" style="width: 100%; height: auto;">
+        <h6>Name: ${item.name}</h6>
+        <p>Cost: ₹${item.cost}</p>
+        <button>${item.button1}</button>
+        <button>${item.button2}</button>
+    </div>
+    `
+})
+
+const container = document.getElementById('d2');
+container.innerHTML=newbox
+
+    </script> -->
+
+
+
+    <script>
+        localStorage.setItem("name","Aditya")
+        mystorage=localStorage.getItem("name")
+        console.log(mystorage)
+     let obj={name1:"aditya",age:25}
+
+        let  arr=["mahesh","rohit","aditya"]
+        console.log(arr)
+        let myarr=JSON.stringify(arr)
+        let myy=JSON.parse(myarr)
+
+        console.log(myarr)
+        console.log(myy)
+
+        console.log(obj)
+
+        let o1=JSON.stringify(obj)
+        console.log(o1)
+        
+    </script>
+    
+    
+</body>
+</html>

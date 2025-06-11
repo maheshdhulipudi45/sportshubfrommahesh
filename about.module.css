@@ -1,0 +1,36 @@
+.aboutContainer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.aboutHeader h1 {
+    text-align: center;
+    color: #08036e;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.aboutContent {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #333;
+}
+
+.aboutContent h3 {
+    color: #b8860b;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.aboutContent ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.aboutContent ul li {
+    margin: 10px 0;
+    color: #08036e;
+}

@@ -1,0 +1,836 @@
+/* @import "tailwindcss"; */
+body{
+  background: linear-gradient(180deg, #f5f5f5, #e2e8f0);
+}
+.bodybox1{
+  margin-top: 60px;
+    height: 500px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bodybox2{
+    height: 100%;
+    background-color: #08036e;
+    background:url(C:\Users\H\Desktop\MaheshReact\thubtasks\public\flat-lay-notebook-with-baseball-glove_23-2148347891.jpg);
+    background-size:100% 100% ;
+    background-position: fixed;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    box-shadow:   0px 4px 3px  rgba(0, 0, 0, 0.8);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.bodybox3{
+  height: 100%;
+
+  width: 43%;
+  color: rgb(5, 5, 5);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  left: 43%;
+  padding: 15px;
+ 
+}
+.bodybox3 h1{
+  color: rgb(9, 2, 110);
+  font-weight: 900;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-transform: capitalize;
+}
+
+.bodybox3 p {
+  color: rgb(5, 5, 5);
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: justify;
+  font-weight: 700;
+  font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 10px;
+}
+.bodybox3_1{
+  height: 100%;
+  background-color: #036e0c;
+  width: 50%;
+  border-radius:0px 10px 10px 0px ;
+}
+.bodybox3_1 img{
+  height: 100%;
+  width: 100%;
+  border-radius:0px 10px 10px 0px ;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .bodybox1 {
+    max-width: 100%;
+    margin-top: 60px;
+    height: 350px; /* Adjust height for smaller screens */
+    flex-direction: column;
+    align-items: center;
+ 
+  }
+
+  .bodybox2 {
+    height: 300px;
+    margin-top: 35px;
+    flex-direction: column; /* Stack the content vertically */
+    width: 100%;
+    border-radius: 1px;
+  }
+
+  .bodybox3 {
+    
+    width: 45%; /* Full width for better display */
+    padding: 25px; /* Add padding for content spacing */
+    text-align: center;
+    font-size: 0.9em;
+    padding: 10px;
+    color: #000;
+    position: relative;
+    left: 40%;
+  }
+
+  .bodybox3 h1 {
+    font-size: 1.5rem; /* Adjust heading size */
+  }
+
+  .bodybox3 p {
+    color: #000;
+    font-size: 0.7em;
+   text-align: center;
+    padding: 10px; /* Slightly smaller text for smaller screens */
+  }
+
+  .bodybox3_1 {
+    width: 100%; /* Full width for the image container */
+    border-radius: 0px 0px 10px 10px; /* Adjust corners */
+  }
+
+  .bodybox3_1 img {
+    height: auto;
+    max-height: 300px; /* Set a max height for the image */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bodybox1 {
+    margin-top: 40px;
+    /* padding: 10px; */
+    width: 100%;
+   
+  }
+
+  .bodybox2 {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%; /* Use the full screen width */
+    border-radius: 5px;
+    box-shadow: none; /* Simplify design for smaller devices */
+  }
+
+  .bodybox3 {
+   
+   padding: 25px;
+  text-align: justify;
+    font-size: 0.7rem; /* Adjust font size for readability */
+  }
+
+  .bodybox3 h1 {
+    font-size: 0.8rem; /* Adjust heading size */
+  }
+  .bodybox3 p {
+    color: #000;
+    font-size: 0.7em;
+   text-align:justify;
+    padding: 10px; /* Slightly smaller text for smaller screens */
+  }
+
+  
+  .bodybox3_1 img {
+    height: auto;
+    max-height: 200px; /* Further reduce image size */
+  }
+}
+
+   /* Smooth Slide-in for Entire Sections */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  to {
+    opacity: 1;
+    transform: scale(0.99);
+  }
+}
+
+.bodybox3{
+  animation: slideIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bodybox3_1 img {
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Hover Animation for Buttons */
+button {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #1769AA;
+}
+
+
+
+
+
+
+
+
+/* Slider Animation */
+/* Slider Animation */
+/* Slider Animation */
+.slider-container .slick-slide {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.slider-container .slick-slide:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+
+
+/*autoslider */
+
+.Autoslider0 {
+  background-color: #08036e;
+  border-radius: 0;
+}
+
+.Autoslider {
+  border-radius: 18px;
+  padding: 30px 30px;
+  margin: auto;
+  overflow: hidden;
+  height: 350px;
+}
+
+.Auto11{
+  height: 280px;
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+ border-radius: 9px;
+}
+
+.Auto11 img{
+  height: 85%;
+  max-width: 90%;
+  border-radius: 9px;
+  display: block;
+  margin: 0 auto;
+}
+
+.Auto11 h3 {
+  font-size: 18px;
+  color: #000;
+  padding: 4px;
+}
+
+/* Gap between slides */
+.Autoslider .slick-slide {
+  margin: 0 9.5px;
+}
+
+.Autoslider .slick-list {
+  margin: 0 -7.5px;
+}
+
+/* Responsive Styles */
+
+/* Below 1024px */
+@media (max-width: 1024px) {
+  .Autoslider {
+    width: 90%;
+  }
+
+  .Auto11{
+    height: 230px;
+    padding: 8px;
+  }
+
+  .Auto11 img {
+    max-width: 85%;
+  }
+
+  .Auto11 h3 {
+    font-size: 14px;
+  }
+}
+
+/* Below 768px */
+@media (max-width: 768px) {
+  .Autoslider {
+    width: 90%;
+    overflow-x: hidden;
+  }
+  .Autoslider{
+    height: 250px;
+  }
+
+  .Auto11 {
+    height: 200px;
+    padding: 6px;
+  }
+
+  .Auto11 img {
+    max-width: 80%;
+  }
+
+  .Auto11 h3{
+    font-size: 12px;
+  }
+}
+
+/* Below 480px */
+@media (max-width: 480px) {
+  .Autoslider0{
+    padding: auto;
+  }
+  .Autoslider {
+    width: 85%;
+    padding: 10px;
+  }
+.Autoslider{
+  height: 250px;
+}
+  .Auto11 {
+    height: 200px;
+    padding: 5px;
+  }
+
+  .Auto11 img {
+    height: 75%;
+    max-width: 75%;
+  }
+
+  .Auto11 h3  {
+    font-size: 10px;
+    padding: 2px;
+  }
+
+  .Autoslider .slick-list {
+    margin: 10px auto;
+  }
+}
+
+
+
+
+
+
+/* top features */
+.featured {
+  padding: 2rem;
+
+}
+
+.featured h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+ 
+}
+
+.article {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 200px;
+  max-width: 900px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.article:hover {
+  transform: translateY(-5px);
+}
+
+.article img {
+  border-radius: 11px;
+  width: 290px;
+  height: 85%;
+  padding: 7px;
+  margin: 7px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.article-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* row instead of column */
+  align-items: center;
+  gap: 1rem; /* spacing between h3 and p */
+  flex-wrap: wrap; /* allows wrap on small screens */
+}
+.article1 {
+  text-align:left;
+  padding: 5px;
+}
+.article1 p{
+  text-align: justify;
+}
+.article-content h3 {
+  
+  margin: 10px;
+  font-size: 1.2rem;
+  color: #222;
+  white-space: nowrap; /* keep title in one line if possible */
+}
+
+.article-content p {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+  flex: 1; /* take remaining space */
+  min-width: 200px;
+}
+
+
+
+
+/* --- Media Queries for Responsiveness --- */
+
+@media (max-width: 1200px) {
+  .article {
+    max-width: 80%; /* adjust width for tablet or smaller screens */
+    flex-direction: column; /* stack elements vertically on medium screens */
+    height: auto; /* let content dictate height */
+  }
+
+  .article img {
+    width: 100%; /* make images fill available space */
+    height: auto; /* maintain aspect ratio */
+  }
+
+  .article-content {
+    justify-content: flex-start; /* align items at the start on smaller screens */
+    text-align: center;
+  }
+
+  .article-content h3 {
+    font-size: 1.1rem; /* slightly smaller font size */
+  }
+
+  .article-content p {
+    font-size: 0.95rem; /* adjust paragraph font size for readability */
+  }
+}
+
+@media (max-width: 768px) {
+  .articles{
+    height: 800px;
+  
+  }
+  
+  .article {
+    max-width: 85%; /* full width on mobile devices */
+    flex-direction: column; /* stack elements vertically */
+    align-items: center; /* center content */
+    height: 230px; 
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(2, 1fr);/* let content determine height */
+  }
+
+  .article img {
+    width: 90%; /* image takes full width */
+    height: 190px; /* maintain aspect ratio */
+    margin: 6px 0; 
+    padding-left: 14px;/* spacing around the image */
+  }
+
+  .article-content {
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .article-content h3 {
+    font-size: 1.1rem; /* adjust font size for mobile */
+    margin: 10px 0;
+  }
+
+  .article-content p {
+    font-size: 1rem; /* adjust paragraph font size for better readability */
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .featured h2 {
+    font-size: 1.5rem; /* reduce title font size on very small screens */
+  }
+  .articles{
+    height: 620px;
+    width: 100%;
+  
+  }
+
+  .article {
+    max-width: 100%;
+    flex-direction: column; /* stack content vertically */
+    align-items: center;
+    justify-content: center;
+    height: 190px;
+      
+  }
+
+  .article img {
+    align-items: center;
+    width: 90%;
+    height: 150px;
+    margin-top: -20px;
+ 
+
+  }
+
+  .article {
+    padding: 1rem;
+    text-align:justify;
+    justify-content: center;
+   
+  }
+
+  .article h3 {
+    margin-top: -10px;
+    font-size: 0.8rem; /* adjust font size for mobile devices */
+  }
+
+  .article p {
+    margin-top: -10px;
+    font-size: 0.9rem;
+    padding: 5px; 
+    text-align: justify;/* smaller text for small screens */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* events */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* sportshilight */
+
+.timeline {
+  padding: 40px 30px;
+  background: linear-gradient(180deg, #f5f5f5, #e2e8f0);
+  text-align: center;
+ 
+}
+
+.timeline h2 {
+  font-size: 2.5rem;
+  color: #001970;
+  margin-bottom: 50px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Grid layout for timeline cards */
+.timelineGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+/* Card Style */
+.timelineItem {
+  height: 350px;
+  background: #ffffff;
+  border-radius: 11px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 350px;
+  position: relative;
+}
+
+.timelineItem:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Image Styling */
+.timelineImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  border-bottom: 3px solid #001970;
+}
+
+.timelineItem:hover .timelineImage {
+  transform: scale(1.05);
+}
+
+/* Text content */
+.timelineItem h3 {
+  font-size: 1.4rem;
+  margin: 18px 15px 10px;
+  color: #0a1c47;
+  font-weight: 700;
+}
+
+.timelineItem p {
+  font-size: 1rem;
+  color: #444;
+  padding: 0 15px 20px;
+  line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+
+  .timelineGrid{
+    height: 910px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+     align-items: center;
+     justify-content: center;
+    gap: 15px;
+    padding: 0px;
+    margin-left: 65px;
+   
+  }
+  .timelineItem{
+    height: 330px;
+    width: 290px;
+    
+  }
+  .timelineItem img{
+    height: 45%;
+    width: 100%;
+  }
+  /* .timeline {
+    padding: 40px 20px;
+  } */
+  .timelineItem p{
+    font-size: 0.7rem;
+  }
+  .timeline h2 {
+    font-size: 2rem;
+  }
+
+  
+}
+
+@media (max-width: 480px) {
+
+
+  .timelineGrid{
+    height: 910px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+     align-items: center;
+     justify-content: center;
+    gap: 15px;
+    padding: 0px;
+    margin-left: 45px;
+   
+  }
+  .timelineItem{
+    height: 300px;
+    width: 200px;
+    
+  }
+  .timelineItem img{
+    height: 45%;
+    width: 200px;
+  }
+  .timeline h2 {
+    font-size: 1.3rem;
+   
+  }
+
+  .timelineItem h3 {
+    font-size: 1.2rem;
+  }
+
+  .timelineItem p {
+    font-size: 0.75rem;
+  }
+
+  .timelineImage {
+    height: 150px;
+  }
+}
+
+
+
+.app {
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.eventGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.eventCard {
+  background: linear-gradient(to right, rgb(218, 218, 235), rgb(209, 45, 209),rgb(80, 80, 233));
+
+
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.7);
+  padding: 4px;
+  height: 350px;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.eventCard img{
+
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.eventCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.eventDetails {
+  padding: 1rem;
+  text-align: left;
+  width: 100%;
+}
+
+.eventDetails h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: rgb(15, 14, 14);
+  font-weight: 790;
+}
+
+.eventDetails p {
+  margin: 0.3rem 0;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .app {
+    padding: 1rem;
+  }
+
+  .eventCard {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .eventDetails h2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .eventGrid {
+    grid-template-columns: repeat(2,1fr) ;
+  }
+
+  .eventCard {
+    height: 270px;
+   width: 180px;
+  }
+  .eventCard img{
+    height: 51%;
+  }
+
+  .eventDetails p {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,349 @@
+/* Basic reset */
+.logind0{
+    height: 750px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logind1 {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    height: 470px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.logind2 {
+  align-items: center;
+  margin: 25px 50px;
+    width: 45%;
+    /* height: 75%; */
+    border-radius: 12px;
+    padding: 40px;
+    background-color:#08036e;
+    color: white;
+    text-align: center;
+}
+.logind2 img{
+    margin-top: 13px;
+    height: 180px;
+    width: 180px;
+}
+.logind2 h3 {
+    font-size: 37px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.logind2 h5 {
+    font-size: 25px;
+    margin-top: 8px;
+    text-transform: uppercase;
+}
+.logind2 h6 {
+    font-size: 12px;
+    line-height: 19px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+
+.logind3 {
+    width: 50%;
+    padding: 40px;
+}
+
+.logind3 h2 {
+    color: #08036e;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #5c6bc0;
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    background-color: #08036e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3f4a9f;
+}
+
+p {
+    text-align: right;
+    font-size: 14px;
+    color: #08036e;
+    margin-top: 3px;
+    padding: 5px;
+}
+
+span {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+span h6 {
+    color: #333;
+    display: inline;
+}
+
+span li {
+    color: #08036e;
+    font-weight: bold;
+    list-style-type: none;
+    display: inline;
+    cursor: pointer;
+}
+
+span li:hover {
+    text-decoration: underline;
+}
+
+
+
+
+   .socialIcons {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 2px;
+    gap: 19px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .icon {
+    font-size: 29px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .icon:hover {
+    transform: scale(1.2);
+  }
+  
+  
+  .google {
+    color: #05d53d; 
+  }
+  
+  .google:hover {
+    color: #c1351d;
+  }
+  
+
+  .facebook {
+    color: #3b5998; 
+  }
+  
+  .facebook:hover {
+    color: #2d4373;
+  }
+  
+
+  .twitter {
+    color: #1da1f2;
+  }
+  
+  .twitter:hover {
+    color: #0d95e8;
+  }
+  
+
+  .instagram {
+    color: #e4405f; 
+  }
+  
+  .instagram:hover {
+    color: #d6336c;
+  }
+  
+
+
+
+
+
+  
+/* For tablet and smaller screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .logind1 {
+        width: 95%;
+        flex-direction: column; /* Stack login box vertically on smaller screens */
+        height: auto;
+    }
+
+    .logind2,
+    .logind3 {
+        width: 100%;
+        margin: 15px 0;
+        padding: 30px;
+    }
+
+    .logind2 h3 {
+        font-size: 30px;
+    }
+
+    .logind2 h5 {
+        font-size: 20px;
+    }
+
+    .logind2 h6 {
+        font-size: 10px;
+    }
+
+    .logind3 h2 {
+        font-size: 24px;
+    }
+
+    input, button {
+        font-size: 14px;
+    }
+}
+
+/* For mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+    
+    .logind0{
+        height: 1200px;
+    }.logind1 {
+        margin-top: 135px;
+        width: 100%;
+        padding: 15px;
+        flex-direction: column; /* Stack the columns */
+        height: 78%;
+    }
+
+    .logind2,
+    .logind3 {
+        width: 100%;
+        margin: 15px 0;
+        padding: 25px;
+    }
+
+    .logind2 h3 {
+        font-size: 26px;
+    }
+
+    .logind2 h5 {
+        font-size: 18px;
+    }
+
+    .logind2 h6 {
+        font-size: 10px;
+    }
+
+    .logind3 h2 {
+        font-size: 22px;
+    }
+
+    input, button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .socialIcons {
+        gap: 15px;
+    }
+
+    .icon {
+        font-size: 24px;
+    }
+}
+
+/* For very small mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .logind0 {
+        height: 1200px;
+        padding: 15px;
+        margin-top: -195px;
+    }
+
+    .logind1 {
+        width: 90%;
+        flex-direction: column;
+     
+         /* Stack everything vertically */
+        height: 70%;
+        padding: 15px;
+    }
+
+    .logind2 {
+        height: 40%;
+        width: 90%;
+        padding: 20px;
+    }
+
+    .logind2 img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .logind2 h3 {
+        font-size: 22px;
+        
+    }
+
+    .logind2 h5 {
+        font-size: 16px;
+    
+    }
+    .logind2{
+        height: 45%;
+    }
+    .logind3 p {
+        font-size: 17px;
+        font-weight: 890px;
+        color: #030c5a;
+        padding-right: 55px;
+    
+    }
+
+    .logind3 h2 {
+        font-size: 20px;
+    }
+    .logind3 h6 {
+        padding: 5px;
+        font-size: 17px;
+    }
+
+    input, button {
+        width: 70%;
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .socialIcons {
+        gap: 10px;
+    }
+
+    .icon {
+        font-size: 27px;
+    }
+}
